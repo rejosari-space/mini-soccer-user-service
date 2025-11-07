@@ -2,11 +2,6 @@ package error
 
 import "errors"
 
-const (
-	Success = "success"
-	Error   = "error"
-)
-
 var (
 	InternalServerError = errors.New("internal server error")
 	ErrSqlErr           = errors.New("database server error to execute query")
